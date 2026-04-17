@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Report Summarizer</title>
+  <style>
+body {
+  font-family: Arial;
+  background: #f4f6f8;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+textarea {
+  width: 400px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#output {
+  margin-top: 20px;
+  font-weight: bold;
+  color: green;
+}
+</style>
+</head>
+<body>
+
+<h1>Medical Report Summarizer</h1>
+
+<textarea id="inputText" placeholder="Paste medical report here"></textarea>
+<br><br>
+
+<button onclick="summarize()">Summarize</button>
+
+<h2>Result:</h2>
+<p id="output"></p>
+
+<script>
+async function summarize() {
+  let text = document.getElementById("inputText").value;
+
+  let res = await fetch("http://localhost:5000/summarize", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ text })
+  });
+
+  let data = await res.json();
+  document.getElementById("output").innerText = data.summary;
+}
+</script>
+
+</body>
+</html>
