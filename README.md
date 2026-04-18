@@ -1,5 +1,3 @@
-<img width="1360" height="638" alt="image" src="https://github.com/user-attachments/assets/2a51d8a2-c198-4dc9-810a-48cef705a666" /><img width="1360" height="638" alt="image" src="https://github.com/user-attachments/assets/d4909fcd-804b-464f-b6c4-47444942d6c3" /># 🩺 MediScan — AI Medical Report Summariser
----
 
 ## 📁 Project Folder Structur
 
@@ -28,5 +26,10 @@ Let me show you a quick demo…
 This solution can help patients, especially in rural areas, understand their health better and take faster decisions.
 
 In future, we plan to integrate this with hospitals and expand language support
+<img width="1355" height="633" alt="image" src="https://github.com/user-attachments/assets/08e59425-08db-45fc-a243-60edd25ce113" />
+<img width="1353" height="621" alt="image" src="https://github.com/user-attachments/assets/381a9999-efc0-4010-95e7-00e2dea7f7e5" />
+<img width="1360" height="638" alt="image" src="https://github.com/user-attachments/assets/1be1a728-7ccf-4904-97aa-6e16a9b457ab" />
 
-<img width="1360" height="638" alt="image" src="https://github.com/user-attachments/assets/55b5e5a4-5e68-488c-bb76-518959a0aed2" />
+
+
+
